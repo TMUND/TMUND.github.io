@@ -1,0 +1,121 @@
+@import './variables.scss';
+
+.about-us-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  .content-container {
+    text-align: left;
+
+    .text {
+      .label {
+        padding-top: 1em;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-family: $blocky;
+      }
+
+      .about {
+        width: 90%;
+      }
+    }
+
+    &.her {
+
+      .image {
+        margin-right: 2em;
+        min-height: 25em;
+        max-height: 15em;
+        background: url('../assets/photo26.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+    }
+
+    &.him {
+      height: 100%;
+
+      .image {
+        margin-right: 2em;
+        min-height: 25em;
+        background: url('../assets/photo56.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+
+    .content-container {
+      padding-top: 1em;
+
+      .text {
+        border-bottom: 2px solid $green;
+        margin-bottom: 1em;
+
+        .label {
+          padding: 0.5em 0;
+        }
+
+        .about {
+          padding-bottom: 1em;
+          width: 100%;
+        }
+      }
+
+      &.her {
+        padding: 0;
+
+        .image {
+          margin: 0;
+          margin-top: 2em;
+          min-height: 15em;
+          background-position: left;
+        }
+      }
+
+      &.him {
+        .image {
+          margin: 0;
+          min-height: 15em;
+          background-position: left;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) and (min-width: 680px) {
+  .about-us-container {
+    .content-container {
+
+      .text {
+        .label {
+          padding: 0.5em 0;
+        }
+      }
+
+      &.her {
+        .image {
+          min-height: 15em;
+        }
+      }
+
+      &.him {
+        .image {
+          min-height: 15em;
+        }
+      }
+    }
+  }
+}

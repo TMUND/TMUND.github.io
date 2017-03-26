@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.wedding-details-container {
+  display: flex;
+  justify-content: space-around;
+
+  .wedding-details-list {
+    list-style: none;
+
+    li {
+      padding-left: 1em;
+    }
+  }
+
+  .rehearsal-details-list {
+    list-style: none;
+
+    li {
+      padding-left: 1em;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+}
+
+@media (max-width: 960px) and (min-width: 680px) {
+}

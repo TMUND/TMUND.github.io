@@ -1,0 +1,59 @@
+@import './variables.scss';
+
+.app-footer {
+  background-color: $green;
+  text-align: center;
+  font-family: $cursive;
+
+  .image.islands {
+    display: inline-block;
+    float: left;
+    margin-left: 2em;
+    height: 4em;
+    width: 4em;
+    background: transparent;
+    background: url('../assets/islands.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .image.heart {
+    display: inline-block;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    height: 3em;
+    width: 3em;
+    background: transparent;
+    background: url('../assets/heart-full.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .quote {
+    display: inline-block;
+    font-size: 3em;
+    color: white;
+  }
+}
+
+@media (max-width: 680px) {
+  .app-footer {
+    text-align: center;
+
+    .image.islands {
+      display: none;
+    }
+
+    .image.heart {
+      margin-right: 0;
+      float: none;
+    }
+
+    .quote {
+      display: none;
+    }
+  }
+}

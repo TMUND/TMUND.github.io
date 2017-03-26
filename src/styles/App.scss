@@ -11,4 +11,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  .element {
+    min-height: 20em;
+    border-top: 2px dashed black;
+  }
 }
