@@ -10,22 +10,13 @@ import Venue from './components/Venue';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 
-import './styles/BannerImage.scss';
-import './styles/AboutUs.scss';
-import './styles/Header.scss';
-import './styles/Footer.scss';
-import './styles/WeddingDetails.scss';
-import './styles/Venue.scss';
-import './styles/Rsvp.scss';
-import './styles/Registry.scss';
 import './styles/App.scss';
 
-
+// Scrolling library consts
 const Element = Scroll.Element;
 const Events = Scroll.Events;
 const scroll = Scroll.animateScroll;
 const scrollSpy = Scroll.scrollSpy;
-
 
 class App extends Component {
   durationFn(deltaTop) {
@@ -70,29 +61,34 @@ class App extends Component {
           handleSetActive={ this.handleSetActive }
         />
 
-        <Element name='aboutUs' className='element'>
-          <AboutUs
-          />
+        <Element name='aboutUs' className='element about-us'>
+          <div className='about-us-content-wrapper'>
+            <AboutUs />
+          </div>
         </Element>
+        <Element name='details' className='element wedding-details'>
+          <div className='wedding-details-content-wrapper'>
+            <WeddingDetails
+              className='wedding'
+              title='Reception & Ceremony'
+              location='National Tropical Botanical Gardens'
+              address='4425 Lawai Rd, Koloa, HI 96756 '
+              timeline='wedding'
 
-        <Element name='venue' className='element'>
-          <Venue
-          />
+            />
+            <WeddingDetails
+              className='rehearsal'
+              title='Rehearsal Dinner'
+              location='Poipu Beach House'
+              address='4425 Lawai Rd, Koloa, HI 96756 '
+            />
+          </div>
         </Element>
-
-        <Element name='details' className='element'>
-          <WeddingDetails
-          />
+        <Element name='rsvp' className='element rsvp'>
+          <Rsvp />
         </Element>
-
-        <Element name='rsvp' className='element'>
-          <Rsvp
-          />
-        </Element>
-
-        <Element name='registry' className='element'>
-          <Registry
-          />
+        <Element name='registry' className='element registry'>
+          <Registry />
         </Element>
 
         <Footer

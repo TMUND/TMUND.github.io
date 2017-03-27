@@ -1,5 +1,7 @@
 import React from 'react';
 import Scroll from 'react-scroll';
+import '../styles/Header.scss';
+
 
 const Link = Scroll.Link;
 
@@ -19,19 +21,6 @@ export const Header = (props) => {
           onSetActive={props.handleSetActive}
         >
           <div className='header-text'>Toni & Sesha</div>
-        </Link>
-
-        <Link
-          className='menu-item'
-          activeClass='active'
-          to='venue'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          onSetActive={props.handleSetActive}
-        >
-          <div className='header-text'>Venue</div>
         </Link>
 
         <Link

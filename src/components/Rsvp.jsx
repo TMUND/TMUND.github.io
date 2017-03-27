@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Rsvp.scss';
 
 
 export const Rsvp = (props) => {

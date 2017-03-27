@@ -1,22 +1,49 @@
 @import './variables.scss';
 
-.wedding-details-container {
-  display: flex;
-  justify-content: space-around;
+.details-container {
+  display: inline-block;
+  color: white;
+  width: 30em;
+  &.wedding {
 
-  .wedding-details-list {
-    list-style: none;
+  }
 
-    li {
-      padding-left: 1em;
+  &.rehearsal {
+    float: right;
+  }
+
+  h1 {
+    font-family: $blocky;
+    color: $indigo;
+  }
+
+  .location {
+    font-family: $cursive;
+    font-size: 1.5em;
+  }
+
+  .address {
+    padding-top: 0.5em;
+    font-family: $cursive;
+    font-size: 1.35em;
+    color: white;
+
+    .google-map-link {
+      text-decoration: none;
+      color: $green;
     }
   }
 
-  .rehearsal-details-list {
+  .timeline-list {
+    padding-left: 0.5em;
     list-style: none;
 
     li {
-      padding-left: 1em;
+      font-size: 1em;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px dotted white;
+      color: white;
     }
   }
 }
