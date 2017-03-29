@@ -6,7 +6,7 @@ export const Registry = (props) => {
   return (
     <div className='registry-container'>
       <h1>Registry</h1>
-      <div>Registry THING GOES HERE!</div>
+      <div>We have come to the decision that we would rather just have your cold hard cash. Money please!</div>
     </div>
   );
 };

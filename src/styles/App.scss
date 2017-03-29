@@ -14,13 +14,15 @@ html {
   font-family: $simple;
 
   .element {
-    padding: 1em 1em;
-    min-height: 20em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 
     &.about-us {
       .about-us-content-wrapper {
         width: 90%;
-        margin: 1em auto;
+        margin: 0 auto;
+        padding-bottom: 8em;
       }
     }
 
@@ -29,7 +31,7 @@ html {
 
       .wedding-details-content-wrapper {
         width: 90%;
-        margin: 1em auto;
+        margin: 0 auto;
       }
     }
 

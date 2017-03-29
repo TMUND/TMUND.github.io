@@ -9,6 +9,9 @@
     font-family: $simple;
 
     .text {
+      padding-bottom: 2em;
+      min-height: 12em;
+
       .label {
         padding-top: 1em;
         font-weight: bold;

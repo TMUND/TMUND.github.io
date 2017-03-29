@@ -56,9 +56,9 @@ class BannerImage extends Component {
           {
             (this.props.counter)
             ? (<div className='counter'>
-              <div className='counter-item days'>{ this.state.days } d</div>
-              <div className='counter-item hours'>{ this.state.hours } h</div>
-              <div className='counter-item minutes'>{ this.state.minutes } m</div>
+              <div className='counter-item days'>{ this.state.days } D</div>
+              <div className='counter-item hours'>{ this.state.hours } H</div>
+              <div className='counter-item minutes'>{ this.state.minutes } M</div>
               <div className='counter-item seconds'>{ this.state.seconds } s</div>
             </div> )
             : null

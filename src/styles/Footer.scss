@@ -9,6 +9,7 @@
     display: inline-block;
     float: left;
     margin-left: 2em;
+    margin-top: 0.5em;
     height: 4em;
     width: 4em;
     background: transparent;
@@ -22,7 +23,7 @@
     display: inline-block;
     float: right;
     margin-right: 2em;
-    margin-top: 0.5em;
+    margin-top: 1em;
     height: 3em;
     width: 3em;
     background: transparent;
@@ -34,7 +35,8 @@
 
   .quote {
     display: inline-block;
-    font-size: 3em;
+    font-size: 2.5em;
+    padding-bottom: 0.15em;
     color: white;
   }
 }
