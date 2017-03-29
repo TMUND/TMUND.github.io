@@ -63,6 +63,7 @@ class BannerImage extends Component {
             </div> )
             : null
           }
+          <div className='wedding-date'>12 / 20 / 2017</div>
         </div>
       </div>
     )

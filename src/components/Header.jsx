@@ -20,7 +20,7 @@ export const Header = (props) => {
           duration={500}
           onSetActive={props.handleSetActive}
         >
-          <div className='header-text'>About Us</div>
+          <div className='header-text'>Our Story</div>
         </Link>
 
         <Link
