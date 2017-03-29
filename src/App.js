@@ -6,7 +6,6 @@ import BannerImage from './components/BannerImage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WeddingDetails from './components/WeddingDetails';
-import Venue from './components/Venue';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 
@@ -53,7 +52,7 @@ class App extends Component {
       <div className='app'>
         <BannerImage
           className='home'
-          text='Time formula not correct'
+          text='Sesha & Toni'
           counter={ true }
         />
 
@@ -80,7 +79,7 @@ class App extends Component {
               className='rehearsal'
               title='Rehearsal Dinner'
               location='Poipu Beach House'
-              address='4425 Lawai Rd, Koloa, HI 96756 '
+              address='another address, Koloa, HI 96756 '
             />
           </div>
         </Element>

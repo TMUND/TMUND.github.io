@@ -2,8 +2,10 @@
 
 .details-container {
   display: inline-block;
-  color: white;
   width: 30em;
+  font-family: $simple;
+  color: white;
+
   &.wedding {
 
   }
@@ -13,29 +15,33 @@
   }
 
   h1 {
-    font-family: $blocky;
-    color: $indigo;
+    font-family: $simple;
   }
 
   .location {
-    font-family: $cursive;
-    font-size: 1.5em;
-  }
+    font-size: 1.15em;
 
-  .address {
-    padding-top: 0.5em;
-    font-family: $cursive;
-    font-size: 1.35em;
-    color: white;
-
-    .google-map-link {
+    a {
+      font-size: .85em;
       text-decoration: none;
+      color: $green;
+    }
+
+    a:visited {
+      text-decoration: none;
+      decoration: none;
       color: $green;
     }
   }
 
+  .address {
+    padding-top: 0.5em;
+    font-size: 1em;
+    color: white;
+  }
+
   .timeline-list {
-    padding-left: 0.5em;
+    padding-left: 0;
     list-style: none;
 
     li {
