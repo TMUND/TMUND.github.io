@@ -16,12 +16,19 @@ html {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &.about-us {
       .about-us-content-wrapper {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 8em;
+
+        .divider {
+          width: 95%;
+          margin: 4em auto;
+          border-bottom: 5px solid $green;
+        }
       }
     }
 

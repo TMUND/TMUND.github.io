@@ -9,6 +9,7 @@ import WeddingDetails from './components/WeddingDetails';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 
+import CarouselContainer from './components/CarouselContainer';
 import ntbgImage from './assets/ntbg.jpg';
 import './styles/App.scss';
 
@@ -64,6 +65,8 @@ class App extends Component {
         <Element name='aboutUs' className='element about-us'>
           <div className='about-us-content-wrapper'>
             <AboutUs />
+            <div className='divider'></div>
+            <CarouselContainer />
           </div>
         </Element>
         <Element name='details' className='element wedding-details'>
