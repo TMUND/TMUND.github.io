@@ -5,6 +5,7 @@ import '../styles/WeddingDetails.scss';
 export const WeddingDetails = (props) => {
   return (
     <div className={ (props.className) ? 'details-container ' + props.className : 'details-container'}>
+      { (props.imageBefore) ? <div className='image'><img src={ props.imageBefore } alt='national tropical botanical garden' /></div> : null }
       <h1>{ props.title }</h1>
       <div className='location'>{ props.location } (<a target='_blank' href='https://www.google.com/maps/place/National+Tropical+Botanical+Garden/@21.8875034,-159.4949768,17z/data=!4m8!1m2!2m1!1skauai+national+tropical+botanical+garden!3m4!1s0x0:0x39440497f2d853e5!8m2!3d21.886686!4d-159.4926238'> GMaps Link </a>)</div>
       <div className='address'>{ props.address }</div>
@@ -27,6 +28,7 @@ export const WeddingDetails = (props) => {
               </ul>
             )
       }
+      { (props.imageAfter) ? <div className='image'><img src={ props.imageAfter } alt='poipu house' /></div> : null }
     </div>
   );
 };

@@ -2,19 +2,34 @@
 
 .details-container {
   display: inline-block;
-  width: 30em;
+  max-width: 40%;
   font-family: $simple;
   color: white;
 
   &.wedding {
-
+    .image {
+      margin-top: 3em;
+    }
   }
 
   &.rehearsal {
     float: right;
+
+    .image {
+      margin-bottom: 4em;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
   }
 
   h1 {
+    margin-top: 0;
     font-family: $simple;
   }
 

@@ -9,6 +9,7 @@ import WeddingDetails from './components/WeddingDetails';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 
+import ntbgImage from './assets/ntbg.jpg';
 import './styles/App.scss';
 
 // Scrolling library consts
@@ -73,13 +74,14 @@ class App extends Component {
               location='National Tropical Botanical Gardens'
               address='4425 Lawai Rd, Koloa, HI 96756 '
               timeline='wedding'
-
+              imageAfter={ ntbgImage }
             />
             <WeddingDetails
               className='rehearsal'
               title='Rehearsal Dinner'
               location='Poipu Beach House'
               address='another address, Koloa, HI 96756 '
+              imageBefore={ ntbgImage }
             />
           </div>
         </Element>
