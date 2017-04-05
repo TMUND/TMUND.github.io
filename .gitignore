@@ -16,3 +16,9 @@ npm-debug.log
 
 # Sublime project and workspace
 *.sublime*
+
+#assets
+src/assets
+
+#fuck
+src/fuck
