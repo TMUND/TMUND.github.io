@@ -42,6 +42,10 @@ html {
       }
     }
 
+    &.rsvp {
+      text-align: center;
+    }
+
     &.registry {
       background-color: $jade;
     }

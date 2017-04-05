@@ -17,6 +17,12 @@ import photo10 from '../assets/photo10.jpg';
 import photo11 from '../assets/photo11.jpg';
 import photo12 from '../assets/photo12.jpg';
 import photo13 from '../assets/photo13.jpg';
+import photo14 from '../assets/photo14.jpg';
+import photo15 from '../assets/photo15.jpg';
+import photo16 from '../assets/photo16.jpg';
+import photo17 from '../assets/photo17.jpg';
+import photo18 from '../assets/photo18.jpg';
+import photo19 from '../assets/photo19.jpg';
 
 export const CarouselContainer = (props) => {
   let sliderSettings = {
@@ -45,6 +51,12 @@ export const CarouselContainer = (props) => {
         <img className='single-item' src={ photo11 } alt='wedding' />
         <img className='single-item' src={ photo12 } alt='wedding' />
         <img className='single-item' src={ photo13 } alt='wedding' />
+        <img className='single-item' src={ photo14 } alt='wedding' />
+        <img className='single-item' src={ photo15 } alt='wedding' />
+        <img className='single-item' src={ photo16 } alt='wedding' />
+        <img className='single-item' src={ photo17 } alt='wedding' />
+        <img className='single-item' src={ photo18 } alt='wedding' />
+        <img className='single-item' src={ photo19 } alt='wedding' />
       </Slider>
     </div>
   );
