@@ -1,14 +1,11 @@
 @import './variables.scss';
 
 .carousel-container {
-  margin: 0 auto;
-  margin-top: 3em;
   position: relative;
-  padding-bottom: 5em;
 
   .arrow-container {
     position: absolute;
-    bottom: 0;
+    bottom: -6em;
     width: 4em;
     height: 4em;
     text-align: center;

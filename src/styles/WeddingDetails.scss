@@ -7,8 +7,12 @@
   color: white;
 
   &.wedding {
+    h1 {
+      margin-top: 0;
+    }
+
     .image {
-      margin-top: 3em;
+      margin-top: 4em;
     }
   }
 
@@ -16,7 +20,7 @@
     float: right;
 
     .image {
-      margin-bottom: 4em;
+      margin-bottom: 3em;
     }
   }
 
@@ -26,11 +30,6 @@
     -webkit-box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.25);
-  }
-
-  h1 {
-    margin-top: 0;
-    font-family: $simple;
   }
 
   .location {

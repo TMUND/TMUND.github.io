@@ -8,10 +8,12 @@ import Footer from './components/Footer';
 import WeddingDetails from './components/WeddingDetails';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
-
 import CarouselContainer from './components/CarouselContainer';
-import ntbgImage from './assets/ntbg.jpg';
 import './styles/App.scss';
+
+// Images
+import ntbg from './assets/ntbg.jpg';
+import poipuHouse from './assets/poipu_house.jpg';
 
 // Scrolling library consts
 const Element = Scroll.Element;
@@ -75,16 +77,16 @@ class App extends Component {
               className='wedding'
               title='Reception & Ceremony'
               location='National Tropical Botanical Gardens'
-              address='4425 Lawai Rd, Koloa, HI 96756 '
+              address='4425 Lawai Rd, Koloa, HI 96756'
               timeline='wedding'
-              imageAfter={ ntbgImage }
+              imageAfter={ ntbg }
             />
             <WeddingDetails
               className='rehearsal'
               title='Rehearsal Dinner'
               location='Poipu Beach House'
-              address='another address, Koloa, HI 96756 '
-              imageBefore={ ntbgImage }
+              address='2250 Kauai Rd, Koloa, HI 96756 '
+              imageBefore={ poipuHouse }
             />
           </div>
         </Element>
