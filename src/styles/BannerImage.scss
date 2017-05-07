@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media only screen and (max-width: 568px) {
   .banner-image {
     .content-wrapper {
       top: 0;

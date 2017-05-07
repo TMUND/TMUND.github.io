@@ -32,7 +32,21 @@ export const CarouselContainer = (props) => {
     slidesToScroll: 1,
     centerMode: true,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ],
   };
 
   return (

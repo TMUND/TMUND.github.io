@@ -53,3 +53,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 568px) {
+  .slick-initialized.slick-slider {
+    .arrow-container.prev {
+      left: 35%;
+    }
+
+    .arrow-container.next {
+      left: 55%;
+    }
+  }
+}

@@ -45,6 +45,7 @@ class AboutUs extends Component {
           </div>
           <div className='image'><img src={ this.state.herPhoto } className='toni-image' alt='toni' onMouseEnter={ this.onMouseEnterHandler.bind(this) } onMouseLeave={ this.onMouseLeaveHandler.bind(this) } /></div>
         </div>
+        <div className='about-us-divider'></div>
         <div className='content-container him'>
           <h1>Toni Munder</h1>
           <div className='text'>
