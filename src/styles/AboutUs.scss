@@ -65,7 +65,7 @@
       padding-top: 1em;
 
       .text {
-        border-bottom: 2px solid $green;
+        border: 2px solid $green;
         margin-bottom: 1em;
 
         .label {
@@ -80,12 +80,17 @@
 
       &.her {
         padding: 0;
+        margin: 0;
 
         .image {
           margin: 0;
           margin-top: 2em;
           min-height: 15em;
           background-position: left;
+
+          img {
+            max-width: 22em;
+          }
         }
       }
 
@@ -94,6 +99,10 @@
           margin: 0;
           min-height: 15em;
           background-position: left;
+
+          img {
+            max-width: 22em;
+          }
         }
       }
     }
@@ -103,11 +112,8 @@
 @media (max-width: 960px) and (min-width: 680px) {
   .about-us-container {
     .content-container {
-
-      .text {
-        .label {
-          padding: 0.5em 0;
-        }
+      .label {
+        padding: 0.5em 0;
       }
 
       &.her {

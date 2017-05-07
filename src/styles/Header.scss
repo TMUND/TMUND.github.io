@@ -56,39 +56,6 @@
 
 @media (max-width: 680px) {
   .app-header {
-    height: 100%;
-    width: 100%;
-
-    .header-menu {
-      display: block;
-      width: 100%;
-      text-align: center;
-
-      .image.islands {
-        display: none;
-      }
-
-      .image.heart {
-        display: none;
-      }
-
-      .menu-item {
-        display: block;
-        min-height: 4em;
-        border-top: 1px solid white;
-
-        &:hover {
-          background-color: white;
-
-          .header-text {
-            color: $green;
-          }
-        }
-      }
-
-      .menu-item:last-child {
-        border-bottom: 1px solid white;
-      }
-    }
+    display: none;
   }
 }
