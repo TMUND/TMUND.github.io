@@ -30,7 +30,7 @@
     }
 
     &.prev {
-      left: 46%;
+      left: 35%;
 
       .arrow {
         background: url('../assets/arrow.png');
@@ -42,7 +42,7 @@
     }
 
     &.next {
-      left: 54%;
+      left: 55%;
 
       .arrow {
         background: url('../assets/arrow.png');
@@ -57,11 +57,11 @@
 @media only screen and (max-width: 568px) {
   .slick-initialized.slick-slider {
     .arrow-container.prev {
-      left: 35%;
+      left: 30%;
     }
 
     .arrow-container.next {
-      left: 55%;
+      left: 60%;
     }
   }
 }
