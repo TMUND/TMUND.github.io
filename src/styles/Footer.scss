@@ -50,12 +50,11 @@
     }
 
     .image.heart {
-      margin-right: 0;
-      float: none;
+      display: none;
     }
 
     .quote {
-      display: none;
+      font-size: 2em;
     }
   }
 }
