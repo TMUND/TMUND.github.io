@@ -1,6 +1,18 @@
 @import './variables.scss';
 
-.registry-container {
+.registry {
+  text-align: center;
+  color: white;
+
+  .registry-container {
+    margin: 0 auto;
+
+    p {
+      margin: 0 auto;
+      max-width: 20em;
+      font-size: 1.2em;
+    }
+  }
 }
 
 @media only screen and (max-width: 568px) {

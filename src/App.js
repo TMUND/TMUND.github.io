@@ -9,11 +9,14 @@ import WeddingDetails from './components/WeddingDetails';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 import CarouselContainer from './components/CarouselContainer';
+import WeatherIcon from './components/WeatherIcon';
 import './styles/App.scss';
 
 // Images
 import ntbg from './assets/ntbg.jpg';
 import poipuHouse from './assets/poipu_house.jpg';
+import naPali from './assets/na_pali_coast.jpg';
+import hammock from './assets/hammock.jpg';
 
 // Scrolling library consts
 const Element = Scroll.Element;
@@ -31,16 +34,13 @@ class App extends Component {
   }
 
   handleSetActive(to) {
-    console.log(to, 'to');
   }
 
   componentDidMount() {
     Events.scrollEvent.register('begin', function() {
-      console.log('begin', arguments);
     });
 
     Events.scrollEvent.register('end', function() {
-      console.log('end', arguments);
     });
 
     scrollSpy.update();
@@ -71,6 +71,7 @@ class App extends Component {
             <CarouselContainer />
           </div>
         </Element>
+
         <Element name='details' className='element wedding-details'>
           <div className='wedding-details-content-wrapper'>
             <WeddingDetails
@@ -86,13 +87,36 @@ class App extends Component {
               title='Rehearsal Dinner'
               location='Poipu Beach House'
               address='2250 Kauai Rd, Koloa, HI 96756 '
+              timeline='rehearsal'
               imageBefore={ poipuHouse }
+            />
+            <WeddingDetails
+              className='activities'
+              title='Island Activities'
+              location="*We can recommend from our experience! Please let us know if you'd like more info!"
+              timeline='activities'
+              imageAfter={ naPali }
+            />
+            <WeddingDetails
+              className='accomodation'
+              title='Where to Stay'
+              location='*North: rain more likely || *East: less populated || South: touristy || *West: Dry & Windy'
+              imageBefore={ hammock }
             />
           </div>
         </Element>
+
+        <Element name='weather' className='element weather'>
+          <div className='weather-icon-content-wrapper'>
+            <WeatherIcon
+            />
+          </div>
+        </Element>
+
         <Element name='rsvp' className='element rsvp'>
           <Rsvp />
         </Element>
+
         <Element name='registry' className='element registry'>
           <Registry />
         </Element>
