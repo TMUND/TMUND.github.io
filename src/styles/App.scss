@@ -21,7 +21,7 @@ html {
         .divider {
           width: 95%;
           margin: 4em auto;
-          border-bottom: 5px solid $green;
+          border-bottom: 3px solid $green;
         }
       }
     }
@@ -31,8 +31,13 @@ html {
 
       .wedding-details-content-wrapper {
         width: 90%;
+        max-width: 1500px; // Prevent collapse on screens that are super wide!
         margin: 6em auto;
       }
+    }
+
+    &.weather {
+      min-height: 10vh;
     }
 
     &.rsvp {
@@ -41,6 +46,41 @@ html {
 
     &.registry {
       background-color: $jade;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .app {
+    .element {
+      &.wedding-details {
+        .wedding-details-content-wrapper {
+          margin: 1em auto;
+          width: 95%;
+
+          .details-container {
+            padding-bottom: 3em;
+            margin-bottom: 1em;
+            border-bottom: 3px solid white;
+            text-align: center;
+
+            &:last-child {
+              border-bottom: none;
+              padding: 0;
+            }
+
+            .text-container {
+              display: block;
+              width: 100%;
+              padding: 0;
+            }
+
+            .image {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
 }
