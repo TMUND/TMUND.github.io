@@ -8,7 +8,8 @@ class WeatherIcon extends Component {
     this.state = {
       weatherIcon: '',
       temperature: '',
-      summary: ''
+      summary: '',
+      longerSummary: ''
     }
   }
 
@@ -22,7 +23,8 @@ class WeatherIcon extends Component {
         self.setState({
           weatherIcon: json.daily.icon,
           temperature: json.currently.temperature,
-          summary: json.daily.summary,
+          summary: json.currently.summary,
+          longerSummary: json.daily.summary,
         })
         console.log('parsed json', json)
       }).catch(function(ex) {
@@ -36,13 +38,15 @@ class WeatherIcon extends Component {
 
   render() {
     return (
-      <div className='weather-icon-container'>
-        { this.state.weatherIcon }
-        { this.state.temperature }
-        { this.state.summary }
+      <div className='weather-info-container'>
+        <div>CURRENT WEATHER IN KAUAI: </div>
+        <div className='summary'>{ this.state.temperature } degrees and { this.state.summary }</div>
+        <div className='summary'>{ this.state.longerSummary }</div>
       </div>
     );
   }
 };
 
+        // <div className='icon'>{ this.state.weatherIcon }</div>
+        // <div className='temperature'>{ this.state.temperature }</div>
 export default WeatherIcon;
