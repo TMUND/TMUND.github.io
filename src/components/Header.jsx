@@ -75,19 +75,6 @@ class Header extends Component {
           >
             <div className='header-text'>RSVP</div>
           </Link>
-
-          <Link
-            className='menu-item'
-            activeClass='active'
-            to='registry'
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onSetActive={this.props.handleSetActive}
-          >
-            <div className='header-text'>Registry</div>
-          </Link>
         </div>
       </div>
     );
