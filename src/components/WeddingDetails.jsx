@@ -35,20 +35,20 @@ export const WeddingDetails = (props) => {
     } else if (props.timeline === 'activities') {
       return (
         <ul className='timeline-list'>
-          <li><a>* Day hike on the Kalalau trail to see the Hanakoa falls.</a></li>
-          <li><a>* Sail with Captain Andys Catamaran Tours</a></li>
-          <li><a>* See Waiamea Canyon, Kauais Grand Canyon.</a></li>
-          <li><a>Hang out in historic Hanalei town and get some Wishing Well Shave Ice.</a></li>
-          <li><a>Snorkel at Anini, Poipu, Lydgate or Koloa Landing Beach.</a></li>
-          <li><a>December is whale watching season! Catch a peek from Shipwreck Beach.</a></li>
+          <li><a href="https://www.tripadvisor.com/Attraction_Review-g60612-d7897045-Reviews-Hanakoa_Falls-Hanalei_Kauai_Hawaii.html">* Day hike on the Kalalau trail to see the Hanakoa falls.</a></li>
+          <li><a href="https://www.napali.com/">* Sail with Captain Andys Catamaran Tours</a></li>
+          <li><a href="https://www.tripadvisor.com/Attraction_Review-g60627-d247664-Reviews-Waimea_Canyon-Waimea_Kauai_Hawaii.html">* See Waiamea Canyon, Kauais Grand Canyon.</a></li>
+          <li>Hang out in historic <a href="https://www.tripadvisor.com/Tourism-g60612-Hanalei_Kauai_Hawaii-Vacations.html">Hanalei town</a> and get some <a href="https://www.yelp.com/biz/wishing-well-hanalei-hanalei-2">Wishing Well Shave Ice.</a></li>
+          <li><a href="http://www.hawaiimagazine.com/content/where-snorkel-kauai-during-winter">Snorkel at Anini, Poipu, Lydgate or Koloa Landing Beach.</a></li>
+          <li><a href="https://poipubeach.org/blog/kauai-whale-watching-season">December is whale watching season! Catch a peek from Shipwreck Beach.</a></li>
         </ul>
       )
     } else {
       return (
         <ul className='timeline-list'>
-          <li><a>Rent a condo or house via AirBnB</a></li>
-          <li><a>Rent a condo or house via VRBO</a></li>
-          <li><a>Top Hotels on the island</a></li>
+          <li><a href="https://www.airbnb.com/s/Kauai-County--HI--United-States/homes?adults=2&allow_override%5B%5D=&checkin=2017-12-18&checkout=2017-12-28&guests=2&s_tag=FlfTEcMD">Rent a condo or house via AirBnB</a></li>
+          <li><a href="https://www.vrbo.com/vacation-rentals/usa/hawaii/kauai?sleeps=2-plus&from-date=2017-12-18&to-date=2017-12-29">Rent a condo or house via VRBO</a></li>
+          <li><a href="https://www.tripadvisor.com/Hotels-g29218-Kauai_Hawaii-Hotels.html">Top Hotels on the island</a></li>
         </ul>
       )
     }

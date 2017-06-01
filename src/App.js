@@ -103,7 +103,7 @@ class App extends Component {
             <WeddingDetails
               className='accomodation'
               title='Where to Stay'
-              location='*North: rain more likely || *East: less populated || South: touristy || *West: Dry & Windy'
+              location='North: rain more likely || East: less populated || South: touristy || West: Dry & Windy || Everywhere: Beautiful'
               imageBefore={ hammock }
             />
           </div>
