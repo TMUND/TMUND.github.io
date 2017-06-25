@@ -1,10 +1,10 @@
 {
-  "main.js": "static/js/main.ba8abfef.js",
-  "main.js.map": "static/js/main.ba8abfef.js.map",
+  "main.js": "static/js/main.89c6f7bf.js",
+  "main.js.map": "static/js/main.89c6f7bf.js.map",
   "static/media/banner-image.jpg": "static/media/banner-image.2b0a22ef.jpg",
+  "static/media/islands-white-left.png": "static/media/islands-white-left.2ae39904.png",
   "static/media/islands-white.png": "static/media/islands-white.3cc2f464.png",
-  "static/media/islands.png": "static/media/islands.6f0dbbed.png",
-  "static/media/kauai-outline.png": "static/media/kauai-outline.c35a9d32.png",
+  "static/media/kauai-outline-two.png": "static/media/kauai-outline-two.3fd057a9.png",
   "static/media/lei_2.svg": "static/media/lei_2.c28d04c2.svg",
   "static/media/na_pali_coast.jpg": "static/media/na_pali_coast.aa558d5c.jpg",
   "static/media/ntbg.jpg": "static/media/ntbg.c77715e9.jpg",
@@ -62,7 +62,5 @@
   "static/media/photo9.jpg": "static/media/photo9.ea4f04a5.jpg",
   "static/media/poipu_house.jpg": "static/media/poipu_house.bb6d3cbb.jpg",
   "static/media/sesha_profile.jpg": "static/media/sesha_profile.48c4fca8.jpg",
-  "static/media/sesha_profile_b&w.jpg": "static/media/sesha_profile_b&w.2261c3f5.jpg",
-  "static/media/toni_profile.jpg": "static/media/toni_profile.1b2eb760.jpg",
-  "static/media/toni_profile_b&w.jpg": "static/media/toni_profile_b&w.b72f8ac8.jpg"
+  "static/media/toni_profile.jpg": "static/media/toni_profile.1b2eb760.jpg"
 }
